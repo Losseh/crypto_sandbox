@@ -1,5 +1,7 @@
 package simple_rsa;
 
+import java.util.Objects;
+
 /**
  * TODO ASZ: comment me!
  */
@@ -18,5 +20,22 @@ public class PublicKey {
 
     public int getN() {
         return n;
+    }
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        final PublicKey publicKey = (PublicKey) o;
+        return e == publicKey.e && n == publicKey.n;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(e, n);
     }
 }

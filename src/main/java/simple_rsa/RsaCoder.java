@@ -23,6 +23,19 @@ public class RsaCoder {
         return message.stream().map(codeFoo).collect(Collectors.toList());
     }
 
+    public static PrivateKey breakCode(final List<Integer> plain, final PublicKey publicKey) {
+        final List<Integer> coded = code(plain, publicKey);
+        for (int i = 0; i < publicKey.getN(); i++) {
+            final PrivateKey privCandidate = new PrivateKey(i, publicKey.getN());
+            final List<Integer> decoded = decode(coded, privCandidate);
+            if (decoded.equals(plain)) {
+                return privCandidate;
+            }
+        }
+
+        return null;
+    }
+
     static int exponentiate(final int long_char, final long exponent, final long modulo) {
         long result = 1;
         // this isn't 100% efficient. One can group exponents like 7 = 4 + 2 + 1
