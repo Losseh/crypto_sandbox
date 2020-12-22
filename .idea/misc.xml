@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../example" value="1459512774000" />
+        <entry key="$PROJECT_DIR$/../forcomp" value="1462309612000" />
+        <entry key="$PROJECT_DIR$/../funsets" value="1462312640000" />
+        <entry key="$PROJECT_DIR$/../objsets" value="1462315646000" />
+        <entry key="$PROJECT_DIR$/../patmat" value="1462372864000" />
+        <entry key="$PROJECT_DIR$/../recfun" value="1462365530000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+</project>
